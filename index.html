@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<!-- Coding by CodingLab | www.codinglabweb.com  -->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Techllective Website</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/media.css">
+
+    <!-- for fontawesome -->
+    <script src="https://kit.fontawesome.com/c2b7333601.js" crossorigin="anonymous"></script>
+
+    <!-- Boxicons -->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./assets/images/logo.png" type="image/x-icon">
+
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+
+
+    <!-- GSAP (GreenSock Animation Platform) -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/gsap.min.js"></script>
+
+
+
+
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav container flex">
+            <a href="#" class="logo-content flex">
+                <i class='bx bxl-tumblr logo-icon'></i>
+                <span class="logo-text">techllective</span>
+            </a>
+
+            <div class="menu-bar">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+
+                <div class="menu-content">
+                    <ul class="menu-list flex">
+                        <li><a href="#home" class="nav-link active-navlink">home</a></li>
+                        <li><a href="#services" class="nav-link"> Services </a></li>
+                        <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                        <li><a href="#team" class="nav-link">Team</a></li>
+                        <li><a href="#blog" class="nav-link">Blog</a></li>
+                        <li><a href="#contact" class="nav-link">Contact Us</a></li>
+                    </ul>
+
+                    <div class="media-icons flex">
+                        <a href="https://www.facebook.com" aria-label="Facebook"><i class='bx bxl-facebook'></i></a>
+                        <a href="https://twitter.com/i/flow/login" aria-label="twitter"><i class='bx bxl-twitter' ></i></a>
+                        <a href="https://www.instagram.com/accounts/login" aria-label="instagram"><i class='bx bxl-instagram-alt' ></i></a>
+                        <a href="https://github.com/login" aria-label="github"><i class='bx bxl-github'></i></a>
+                        <a href="https://www.youtube.com/login" aria-label="youtube"><i class='bx bxl-youtube'></i></a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
+    <!-- Main tag -->
+    <main>
+        <!--- Home Section --->
+        <section class="home" id="home">
+            <div class="home-content">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide active">
+                            <img src="./assets/images/img1.png" alt="" class="home-img ">
+
+                            <div class="home-details">
+                                <div class="home-text">
+                                    <!-- Title 1 -->
+                                    <h4 class="homeSubtitle">Building, and Impacting for Empowerment</h4>
+                                    <!-- Subtitle 1 -->
+                                    <h2 class="homeTitle">Empower individuals through <br /> technology</h2>
+                                </div>
+
+                                <button class="button">Explore</button>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <img src="./assets/images/img2.png" alt="" class="home-img">
+
+                            <div class="home-details">
+                                <div class="home-text">
+                                    <!-- Title 2 -->
+                                    <h4 class="homeSubtitle">Leveraging tech, and driving positive change</h4>
+                                    <!-- Subtitle 2 -->
+                                    <h2 class="homeTitle">Inspire innovation and <br> creativity</h2>
+                                </div>
+
+                                <button class="button">Explore</button>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <img src="./assets/images/img3.jpg" alt="" class="home-img">
+
+                            <div class="home-details">
+                                <div class="home-text">
+                                    <h4 class="homeSubtitle"> Harnessing Tech for a Better World</h4>
+                                    <h2 class="homeTitle">Enhancing Productivity and <br> Teamwork</h2>
+                                </div>
+
+                                <button class="button">Explore</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="social">
+                        <a href="https://www.facebook.com" aria-label="Facebook"><i class='bx bxl-facebook'></i></a>
+                        <a href="https://twitter.com/i/flow/login" aria-label="twitter"><i class='bx bxl-twitter' ></i></a>
+                        <a href="https://www.instagram.com/accounts/login" aria-label="instagram"><i class='bx bxl-instagram-alt' ></i></a>
+                        <a href="https://github.com/login" aria-label="github"><i class='bx bxl-github'></i></a>
+                        <a href="https://www.youtube.com/login" aria-label="youtube"><i class='bx bxl-youtube'></i></a>
+                    </div>
+
+
+                    <div class="swiper-button-next swiper-navBtn"></div>
+                    <div class="swiper-button-prev swiper-navBtn"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Services Section -->
+        <section class="section services" id="services">
+
+            <div class="services-text">
+                <h3 class="text-center"> Our Services</h3>
+                <h2 class="text-center">We Offer the <span class="text-secondary"> Follwing Services</span></h2>
+            </div>
+
+
+            <div class="services-content container">
+
+                <div class="col-md-4">
+                    <div class="main">
+                        <div class="service">
+                            <div class="service-logo">
+                                <img src="./Assets/images/service3.png" alt="mfsld" />
+                            </div>
+                            <h4>Software Dev. </h4>
+                            <p>
+                                We develop custom software solutions for desktop and mobile platforms that help you achieve your goals.
+                            </p>
+                        </div>
+                        <div class="shadowOne"></div>
+                        <div class="shadowTwo"></div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="main">
+                        <div class="service">
+                            <div class="service-logo">
+                                <img src="./Assets/images/service1.png" alt="mfsld" />
+                            </div>
+                            <h4>Events & codefests </h4>
+                            <p>
+                                We host hackathons and software events to encourage creativity, and collaboration among students and pros.
+                            </p>
+                        </div>
+                        <div class="shadowOne"></div>
+                        <div class="shadowTwo"></div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="main">
+                        <div class="service">
+                            <div class="service-logo">
+                                <img src="./Assets/images/service4.png" alt="mfsld" />
+                            </div>
+                            <h4>Web Design </h4>
+                            <p>
+                                We create responsive and user-friendly websites that meet your needs and exceed your expectations.
+                            </p>
+                        </div>
+                        <div class="shadowOne"></div>
+                        <div class="shadowTwo"></div>
+                    </div>
+                </div>
+                <!-- <div class="col-md-4 service-last">
+                    <div class="main">
+                        <div class="service">
+                            <div class="service-logo">
+                                <img src="./Assets/images/service4.png" alt="mfsld" />
+                            </div>
+                            <h4>Web Design </h4>
+                            <p>
+                                We create responsive and user-friendly websites that meet your needs and exceed your expectations.
+                            </p>
+                        </div>
+                        <div class="shadowOne"></div>
+                        <div class="shadowTwo"></div>
+                    </div>
+                </div> -->
+
+            </div>
+        </section>
+
+
+        <!-- Portfolio Section -->
+        <section class="section portfolio" id="portfolio">
+            <div class="portfolio-container container">
+                <h3 class="text-center"> Techllective Portfolio </h3>
+                <h2 class="text-center"> Our Latest <span class="text-secondary">  Case Studies </span> </h2>
+                <p class="text-center">
+                    At Techllective, we empower you to perceive the world through a different<br/> lens, unveiling hidden possibilities that you may never have envisioned before.
+                </p>
+                <div class="owl-carousel">
+                    <div class="item"><img src="./assets/images/photo1.jpg" alt="picture" /></div>
+                    <div class="item"><img src="./assets/images/photo2.jpg" alt="picture" /></div>
+                    <div class="item"><img src="./assets/images/photo3.jpg" alt="picture" /></div>
+                    <div class="item"><img src="./assets/images/photo4.jpg" alt="picture" /></div>
+                    <div class="item"><img src="./assets/images/photo5.jpg" alt="picture" /></div>
+                    <div class="item"><img src="./assets/images/photo6.jpg" alt="picture" /></div>
+                    <div class="item"><img src="./assets/images/photo7.jpg" alt="picture" /></div>
+                    <div class="item"><img src="./assets/images/photo8.jpg" alt="picture" /></div>
+                    <div class="item"><img src="./assets/images/photo9.jpg" alt="picture" /></div>
+                    <div class="item"><img src="./assets/images/photo10.jpg" alt="picture" /></div>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- Team Section -->
+        <section class="section team" id="team">
+            <div class="team-container container">
+                <h3 class="text-center">We're here for you</h3>
+                <h2 class="text-center">Meet Our <span class="text-secondary">Professional Team</span></h2>
+
+                <div class="wrapper">
+                    <i id="left" class="fa-solid fa-angle-left"></i>
+                    <ul class="carousel">
+                        <li class="card">
+                            <div class="img">
+                                <img src="./assets/images/august.jpg" alt="img" draggable="false" />
+                            </div>
+                            <a href="#">
+                                <h2>Augustine S. Tamba</h2>
+                            </a>
+                            <span>Chief Technology Officer (CTO)</span>
+                        </li>
+                        <li class="card">
+                            <div class="img">
+                                <img src="./assets/images/img-7.jpg" alt="img" draggable="false" />
+                            </div>
+                            <a href="#">
+                                <h2>Boimah G Konah</h2>
+                            </a>
+                            <span>Software Engineering Manager</span>
+                        </li>
+                        <li class="card">
+                            <div class="img">
+                                <img src="./assets/images/aaron.jpg" alt="img" draggable="false" />
+                            </div>
+                            <a href="#">
+                                <h2>Aaron S. Thomas</h2>
+                            </a>
+                            <span>QA Engineer (Quality Assurance)</span>
+                        </li>
+
+                        <li class="card">
+                            <div class="img">
+                                <img src="./assets/images/deazi.jpg" alt="img" draggable="false" />
+                            </div>
+                            <a href="#">
+                                <h2>Deazi Lakpor</h2>
+                            </a>
+                            <span>UI/UX Designer</span>
+                        </li>
+                        <li class="card">
+                            <div class="img">
+                                <img src="./assets/images/Kollie.jpg" alt="img" draggable="false" />
+                            </div>
+                            <a href="#">
+                                <h2>Kollie Flomo</h2>
+                            </a>
+                            <span>Data Engineer</span>
+                        </li>
+                        <li class="card">
+                            <div class="img">
+                                <img src="./assets/images/Andy.jpg" alt="img" draggable="false" />
+                            </div>
+                            <a href="#">
+                                <h2>Andy Wilson</h2>
+                            </a>
+                            <span>Frontend Developer</span>
+                        </li>
+                        <li class="card">
+                            <div class="img">
+                                <img src="./assets/images/dar.jpg" alt="img" draggable="false" />
+                            </div>
+                            <a href="#">
+                                <h2>Daruis Y. Taye </h2>
+                            </a>
+                            <span>Full Stack Developer</span>
+                        </li>
+                        <li class="card">
+                            <div class="img">
+                                <img src="./assets/images/Markie(1).jpg" alt="img" draggable="false" />
+                            </div>
+                            <a href="#">
+                                <h2>Markie Parker</h2>
+                            </a>
+                            <span>Mobile App Developer</span>
+                        </li>
+                    </ul>
+                    <i id="right" class="fa-solid fa-angle-right"></i>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Blog Section -->
+        <section class="section blog" id="blog">
+            <div class="blog-container container">
+                <div class="blog-text">
+                    <h3 class="text-center"> Our Blog </h3>
+                    <h2 class="text-center"> Read our <span class="text-secondary">  Latest Insights </span> </h2>
+                </div>
+
+                <div class="post">
+
+                    <div class="post-box program">
+                        <img src="./assets/images//techllective-blog1.JPG" alt="fist blog" class="post-img" />
+                        <h2 class="category">Introduction to Techllective</h2>
+                        <a href="#" class="post-title">
+                            Get to Know Techllective
+                        </a>
+                        <span class="post-date">15 August 2023</span>
+                        <p class="post-description">
+                            Techllective envisions leveraging technology and collective efforts to create a better world. We strive to make technology accessible and beneficial for individuals and communities, fostering innovation, teamwork, and social impact to bring about positive
+                            change and make a real difference in the world.
+                        </p>
+                        <!---profile-->
+                        <div class="profile">
+                            <img src="./assets/images/techllective-logo-blue.png" alt="" class="profile-image" />
+                            <span class="profile-name"> Techllective </span>
+                        </div>
+                    </div>
+
+                    <!---post section 2-->
+                    <div class="post-box tech">
+                        <img src="./assets/images/techllective-blog2.png" alt="fist blog" class="post-img" />
+                        <h2 class="category">Tech</h2>
+                        <a href="#" class="post-title">
+                            New Technology skills worth Learning
+                        </a>
+                        <span class="post-date">9 August 2023</span>
+                        <p class="post-description">
+                            The tech industry is seemingly changing daily. You learn one new skill on Monday, and by Friday, it’s out of date. If you want to get ahead, you’ve got to look to the future. The very best IT professionals are always searching for the next big game-changer.
+                            Being the expert in that new thing will give you an edge over your competitors.
+                        </p>
+                        <!---profile-->
+                        <div class="profile">
+                            <img src="./assets/images/august.jpg" alt="" class="profile-image" />
+                            <span class="profile-name">Augustine Tamba</span>
+                        </div>
+                    </div>
+
+
+                    <!---post section 3-->
+                    <div class="post-box program">
+                        <img src="./assets/images/techllective-blog3.webp" alt="fist blog" class="post-img" />
+                        <h2 class="category">Software Development</h2>
+                        <a href="#" class="post-title">
+                            ChatGPT Vs Bard: Which is better?
+                        </a>
+                        <span class="post-date">13 August 2023</span>
+                        <p class="post-description">
+                            The biggest difference between ChatGPT and Bard is the Large Language Models (LLMs) they are powered by. ChatGPT uses the Generative Pre-trained Transformer 4 (GPT-4), while Bard uses the Language Model for Dialogue Applications (LaMBDA). Also, ChatGPT
+                            is developed by OpenAI, while Bard was built by Google.
+                        </p>
+                        <!---profile-->
+                        <div class="profile">
+                            <img src="./assets/images/dar.jpg" alt="fs" class="profile-image" />
+                            <span class="profile-name">Darius Y. Taye</span>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- Contact Section -->
+        <section class="section contact" id="contact">
+            <div class="contact-container container">
+                <div class="contact-text">
+                    <h3 class="text-center"> Get in Touch </h3>
+                    <h2 class="text-center"> Send us <span class="text-secondary">  a Message</span> </h2>
+                </div>
+                <div class="container1">
+                    <div class="content">
+                        <div class="left-side">
+                            <div class="address details">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div class="topic">Address</div>
+                                <div class="text-one">TRNC, Lefkosa</div>
+                                <!-- <div class="text-two">Birendranagar 06</div> -->
+                            </div>
+                            <div class="phone details">
+                                <i class="fas fa-phone-alt"></i>
+                                <div class="topic">Phone</div>
+                                <div class="text-one">+90 533 54 323 43</div>
+                            </div>
+                            <div class="email details">
+                                <i class="fas fa-envelope"> <a href="techllective@gmail.com" target="_blank"> </a> </i>
+                                <div class="topic">Email</div>
+                                <div class="text-two"> techllective@gmail.com</div>
+                            </div>
+                        </div>
+                        <div class="right-side">
+                            <!-- <div class="topic-text">Send us a message</div> -->
+                            <p>If you have any types of quries related to Techllective, you can send us message from here. It's our pleasure to help you.</p>
+                            <form action="#">
+                                <div class="input-box">
+                                    <input type="text" placeholder="Enter your name">
+                                </div>
+                                <div class="input-box">
+                                    <input type="text" placeholder="Enter your email">
+                                </div>
+                                <div class="input-box message-box">
+                                    <input type="textarea" placeholder="Enter your message">
+                                </div>
+                                <!-- <div class="button">
+                                    <input type="button" value="Send Now">
+                                </div> -->
+                                <button class="button">Send Now</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Footer Section -->
+        <footer class="section footer">
+            <div class="footer-container container">
+                <div class="footer-content">
+                    <a href="#" class="logo-content flex">
+                        <i class='bx bxl-tumblr logo-icon'></i>
+                        <span class="logo-text">techllective.</span>
+                    </a>
+
+                    <p class="content-description">Techllective envisions leveraging technology and collective efforts to create a better world.</p>
+
+                    <div class="footer-location flex">
+                        <i class='bx bx-map map-icon'></i>
+
+                        <div class="location-text">
+                            TRNC, lefkosa, 99010
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-linkContent">
+                    <ul class="footer-links">
+                        <h4 class="footerLinks-title">Menu</h4>
+                        <li><a href="#home" class="footer-link">home</a></li>
+                        <li><a href="#services" class="footer-link"> Services </a></li>
+                        <li><a href="#portfolio" class="footer-link">Portfolio</a></li>
+                        <li><a href="#team" class="footer-link">Team</a></li>
+                        <li><a href="#blog" class="footer-link">Blog</a></li>
+                        <li><a href="#contact" class="footer-link">Contact Us</a></li>
+                    </ul>
+                    <!-- <ul class="footer-links">
+                        <h4 class="footerLinks-title">Facility</h4>
+
+                        <li><a href="#" class="footer-link">Coffee</a></li>
+                        <li><a href="#" class="footer-link">Beverages</a></li>
+                        <li><a href="#" class="footer-link">Dishes</a></li>
+                    </ul> -->
+                    <ul class="footer-links">
+                        <h4 class="footerLinks-title">Support</h4>
+
+                        <li><a href="#" class="footer-link">About Us</a></li>
+                        <li><a href="#" class="footer-link">FAQs</a></li>
+                        <li><a href="#" class="footer-link">Private Policy</a></li>
+                        <li><a href="#" class="footer-link">Help Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-copyRight"> Copyright &copy; <span id="year"></span> <a href="www.techllective.com"> Techllective. </a> All Rights Reserved</div>
+        </footer>
+
+        <!-- Scroll Up -->
+        <a href="#home" class="scrollUp-btn flex">
+            <i class='bx bx-up-arrow-alt scrollUp-icon'></i>
+        </a>
+
+    </main>
+
+    <!-- jQuery library (deferred) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="./assets/js/swiper-bundle.min.js"></script>
+
+    <!-- Scroll Reveal -->
+    <script src="./assets/js/scrollreveal.js"></script>
+
+    <!-- Scroll Reveal -->
+    <script src="./assets/js/scrollreveal.min.js"></script>
+
+    <!-- JavaScript -->
+    <script src="./assets/js/script.js"></script>
+
+
+
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script> -->
+
+
+
+</body>
+
+</html>
