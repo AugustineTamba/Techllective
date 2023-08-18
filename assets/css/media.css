@@ -184,10 +184,12 @@
         padding-bottom: 10rem;
     }
     #left {
-        left: 0%;
+        left: 1%;
+        display: none;
     }
     #right {
-        right: 0%;
+        right: 1%;
+        display: none;
     }
 }
 
