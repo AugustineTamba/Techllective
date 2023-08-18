@@ -876,6 +876,30 @@ img {
     font-size: 1.31rem;
 }
 
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.bullet {
+    height: 13px;
+    width: 13px;
+    margin: 0 5px;
+    outline: none !important;
+    border-radius: 50%;
+    border: 2px solid var(--primary-color) !important;
+}
+
+.bullet.active {
+    width: 35px;
+    border-radius: 14px;
+}
+
+.bullet.active,
+.bullet:hover {
+    background: var(--primary-color) !important;
+}
 
 /* Blog */
 
