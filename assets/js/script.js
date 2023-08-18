@@ -138,6 +138,7 @@ const carousel = document.querySelector(".carousel");
 const firstCardWidth = carousel.querySelector(".card").offsetWidth;
 const arrowBtns = document.querySelectorAll(".wrapper i");
 const carouselChildrens = [...carousel.children];
+const paginationBullets = document.querySelectorAll(".bullet");
 
 let isDragging = false,
     isAutoPlay = true,
@@ -207,7 +208,7 @@ const infiniteScroll = () => {
 }
 
 const autoPlay = () => {
-    if (window.innerWidth < 800 || !isAutoPlay) return; // Return if window is smaller than 800 or isAutoPlay is false
+    if (!isAutoPlay) return; // Return if isAutoPlay is false
     // Autoplay the carousel after every 2500 ms
     timeoutId = setTimeout(() => carousel.scrollLeft += firstCardWidth, 2500);
 }
@@ -220,6 +221,31 @@ carousel.addEventListener("scroll", infiniteScroll);
 wrapper.addEventListener("mouseenter", () => clearTimeout(timeoutId));
 wrapper.addEventListener("mouseleave", autoPlay);
 
+// Function to update the active bullet based on the current visible card
+const updateActiveBullet = () => {
+    const visibleCardIndex = Math.round(carousel.scrollLeft / firstCardWidth) % paginationBullets.length;
+    paginationBullets.forEach((bullet, index) => {
+        if (index === visibleCardIndex) {
+            bullet.classList.add("active");
+        } else {
+            bullet.classList.remove("active");
+        }
+    });
+};
+
+// Call the function initially to set the active bullet
+updateActiveBullet();
+
+// Update active bullet when the carousel is scrolled
+carousel.addEventListener("scroll", updateActiveBullet);
+
+// Update active bullet and scroll to the selected card when a bullet is clicked
+paginationBullets.forEach((bullet, index) => {
+    bullet.addEventListener("click", () => {
+        carousel.scrollLeft = (index + cardPerView) * firstCardWidth + 1;
+        updateActiveBullet();
+    });
+});
 
 // Scroll Reveal Animation
 const sr = ScrollReveal({
