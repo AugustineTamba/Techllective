@@ -61,20 +61,6 @@ menuBtn.addEventListener('click', () => {
     navMenu.classList.toggle("open");
 });
 
-// if (navMenu && navOpenBtn) {
-//     navOpenBtn.addEventListener("click", () => {
-//         navMenu.classList.add("open");
-//         body.style.overflowY = "hidden";
-//     })
-// }
-
-// if (navMenu && navCloseBtn) {
-//     navCloseBtn.addEventListener("click", () => {
-//         navMenu.classList.remove("open");
-//         body.style.overflowY = "scroll";
-//     })
-// }
-
 // Change header bg color
 window.addEventListener("scroll", () => {
     const scrollY = window.pageYOffset;
@@ -110,7 +96,7 @@ window.addEventListener("scroll", () => {
         }
 
         navId.addEventListener("click", () => {
-            navMenu.classList.remove("open");
+            navMenu.toggle.remove("open");
             body.style.overflowY = "scroll";
         })
     })
