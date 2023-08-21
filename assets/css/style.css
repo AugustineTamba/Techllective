@@ -850,7 +850,7 @@ img {
 }
 
 .carousel .card .img {
-    background: red;
+    background: var(--clean-color);
     height: 148px;
     width: 148px;
     border-radius: 50%;
@@ -861,7 +861,7 @@ img {
     height: 140px;
     border-radius: 50%;
     object-fit: cover;
-    border: 4px solid #fff;
+    border: 5px solid var(--primary-color);
 }
 
 .carousel .card a {
