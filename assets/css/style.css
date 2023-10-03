@@ -1182,7 +1182,7 @@ img {
 .footer {
     padding: 4rem 2rem 3rem;
     background-color: var(--section-bg);
-    border-top-left-radius: 125px;
+    /*border-top-left-radius: 125px;*/
 }
 
 .footer .content-description {
