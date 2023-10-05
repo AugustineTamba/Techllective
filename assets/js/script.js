@@ -87,12 +87,12 @@ window.addEventListener("scroll", () => {
         const sectionHeight = section.offsetHeight,
             sectionTop = section.offsetTop - 100;
 
-        let navId = document.querySelector(`.menu-content a[href='#${section.id}']`);
-        if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
-            navId.classList.add("active-navlink");
-        } else {
-            navId.classList.remove("active-navlink");
-        }
+        // let navId = document.querySelector(`.menu-content a[href='#${section.id}']`);
+        // if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+        //     navId.classList.add("active-navlink");
+        // } else {
+        //     navId.classList.remove("active-navlink");
+        // }
 
         // navId.addEventListener("click", () => {
         //     navMenu.classList.remove("open");
