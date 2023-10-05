@@ -876,6 +876,7 @@ img {
     grid-template-columns: repeat(auto-fit, minmax(280px, auto));
     justify-content: center;
     gap: 1.5rem;
+    margin-bottom: 5rem;
 }
 
 .post-box {
