@@ -992,7 +992,7 @@ img {
     transition: all 0.8s ease-in-out
 }
 
-.more-btn:hover {
+#load-more:hover {
     background-color: var(--primary-color-hover);
 }
 
