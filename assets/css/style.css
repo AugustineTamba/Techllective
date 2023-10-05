@@ -948,14 +948,14 @@ img {
     overflow: hidden;
 }
 
+.post-description a {
+    color: var(--primary-color)
+}
+
 .profile {
     display: flex;
     align-items: center;
     gap: 10px;
-}
-
-.profile span {
-    font-size: 1.5rem;
 }
 
 .profile-image {
@@ -970,6 +970,7 @@ img {
 .profile-name {
     font-size: 0.82rem;
     font-weight: 500;
+    color: var(--primary-color);
 }
 #load-more {
     /* margin-top: 20px;
