@@ -989,11 +989,12 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: all 0.8s ease-in-out
+    transition: all 0.5s ease-in-out
 }
 
 #load-more:hover {
-    background-color: var(--primary-color-hover);
+    color: var(--clean-color);
+    background-color: var(--primary-color);
 }
 
 /* contact us */
