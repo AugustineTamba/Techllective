@@ -970,7 +970,22 @@ img {
     font-size: 0.82rem;
     font-weight: 500;
 }
+#load-more {
+    /* margin-top: 20px;
+    display: inline-block;
+    padding: 10px 30px;
+    border: 1px solid var(--container-color);
+    color: var(--clean-color);
+    font-size: 16px;
+    background-color: var(--dark-org);*/
+    transition: all 0.8s ease-in-out
+}
 
+.more-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 /* contact us */
 
