@@ -115,6 +115,38 @@ function exploreButton() {
     serviceSection.scrollIntoView({ behavior: "smooth" });
 }
 
+// blog load-more button
+function loadMore() {
+        // Replace 'https://example.com' with the URL of the website you want to open.
+        const websiteUrl = 'https://techllective-blog.vercel.app/';
+
+        // Use window.location to navigate to the specified website.
+        window.location.href = websiteUrl;
+}
+
+// post-box
+
+// Get all img elements within the post-box class
+  const imgElements = document.querySelectorAll('.post-box img.post-img');
+
+  // Define a function to open the link when the image is clicked
+  function openLink(event) {
+    // Get the closest parent post-box element
+    const postBox = event.target.closest('.post-box');
+    
+    // Get the link URL from the "href" attribute of the post-title link within the clicked post-box
+    const link = postBox.querySelector('.post-title').getAttribute('href');
+
+    // Navigate to the link
+    window.location.href = link;
+  }
+
+  // Add a click event listener to each img element
+  imgElements.forEach((imgElement) => {
+    imgElement.addEventListener('click', openLink);
+  });
+
+
 // for portfolio
 //owl owlCarousel
 $(document).ready(function() {
