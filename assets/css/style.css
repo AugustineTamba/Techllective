@@ -964,11 +964,11 @@ img {
     border-radius: 50%;
     object-fit: cover;
     object-position: center;
-    border: 2px solid var(--clean-color);
+    border: 2px solid var(--primary-color);
 }
 
 .profile-name {
-    font-size: 0.82rem;
+    font-size: 1rem;
     font-weight: 500;
     color: var(--primary-color);
 }
@@ -989,6 +989,11 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: all 0.8s ease-in-out
+}
+
+.more-btn:hover {
+    background-color: var(--primary-color-hover);
 }
 
 /* contact us */
